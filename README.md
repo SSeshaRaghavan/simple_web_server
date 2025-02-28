@@ -21,10 +21,9 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
-'''
+```
 import http.server
 import socketserver
-
 PORT = 8000
 
 class MyHandler(http.server.SimpleHTTPRequestHandler):
@@ -37,10 +36,12 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
 with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
     print(f"Serving at port {PORT}")
     httpd.serve_forever()
-    '''
+```
 
 
 # OUTPUT:
-![alt text](<Screenshot 2025-02-26 155150.png>)
+![alt text](<Screenshot 2025-02-26 155506-1.png>)
+
 # RESULT:
 The program for implementing simple webserver is executed successfully.
+
